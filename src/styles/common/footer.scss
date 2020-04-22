@@ -1,5 +1,49 @@
 .footer {
-    border:
-        1px
-        solid red;
+  background: #484848;
+  box-shadow: 3px 1px 16px rgba(0, 0, 0, 0.21);
+  padding: 35px;
+
+  &__container {
+
+    &:before {
+      content: '';
+      display: none;
+      position: absolute;
+      width: 100%;
+      background-color: #A2A2A2;
+      height: 1px;
+      bottom: 85px;
+
+      @include phone {
+        display: block;
+      }
+    }
+
+    @include laptop {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__copyright {
+    color: $secondFontColor;
+    line-height: $mainLineHeight;
+
+    @include laptop {
+      margin-top: 20px;
+    }
+
+    @include phone {
+      text-align: center;
+    }
+
+    @include phone-m {
+      font-size: 13px;
+    }
+  }
 }

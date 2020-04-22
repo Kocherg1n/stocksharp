@@ -19,7 +19,9 @@
   }
 
   &__logo {
-
+    @include laptop {
+      flex: 1;
+    }
   }
 
   &__logo-icon {
@@ -32,11 +34,17 @@
 
   }
 
-  &__lang_controls {
-
+  &__lang-controls {
+    @include laptop {
+      margin-right: 30px;
+    }
   }
 
   &__personal-controls {
+
+    @include phone {
+      display: none;
+    }
 
   }
 
@@ -44,5 +52,18 @@
     display: flex;
     justify-content: center;
     padding-top: 30px;
+
+    @include laptop {
+      display: none;
+    }
+  }
+
+  &__hamburger {
+    display: none;
+
+    @include laptop {
+      display: block;
+      margin-left: 30px;
+    }
   }
 }

@@ -1,6 +1,10 @@
 /* nav style */
 .nav {
 
+  @include laptop {
+    display: none;
+  }
+
   &__list {
     display: flex;
    }

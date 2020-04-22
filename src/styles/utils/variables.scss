@@ -1,18 +1,19 @@
-// Font
+// Fonts
 $mainFont: 'Fira Sans', Helvetica, Arial, sans-serif;
 $mainFontSize: 18px;
 $mainLineHeight: 1.4;
 
-// Mobile first
-$mediaWidthMobile: 320px;
-$mediaWidthTablet: 768px;
-$mediaWidthTabletHorizontal: 1024px;
-$mediaWidthLaptop: 1366px;
+// Resolutions
+$phone-m: 320px;
+$phone: 480px;
+$tablet: 768px;
+$laptop: 1024px;
+$desktop: 1366px;
 
 // Colors
 $mainFontColor: #4F4F4F;
 $secondFontColor: #FFFFFF;
 $isActiveColor: #2D9CDB;
 
-// Transition
+// Transition speed
 $speed: 0.2s;

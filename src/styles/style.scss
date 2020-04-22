@@ -1,16 +1,20 @@
 // utils & mixins
 
+@import "mixins/mixins";
+
 @import "utils/variables";
+
+@import "mixins/media";
 
 @import "common/global";
 
 @import "utils/fonts";
 
-@import "mixins/media";
-
 // modules
 
 @import "common/header";
+
+@import "common/hamburger";
 
 @import "common/nav";
 
@@ -20,17 +24,24 @@
 
 @import "common/sub-nav";
 
-@import "common/banner/banner";
+@import "common/banner";
 
-@import "common/banner/banner-slider";
+@import "page-modules/index/index-slider";
 
-@import "common/banner/banner-slider-nav";
+@import "common/slider-nav";
 
-@import "common/banner/banner-pagination";
+@import "common/pagination";
 
-@import "common/products/products";
+@import "page-modules/index/products";
+
+@import "page-modules/index/news";
 
 @import "common/footer";
 
-@import "common/active-element-style";
+@import "common/footer-nav";
 
+@import "page-modules/programs/program-banner";
+
+@import "page-modules/programs/program-slider";
+
+@import "common/active-element-style";

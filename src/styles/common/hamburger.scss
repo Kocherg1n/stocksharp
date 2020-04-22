@@ -1,0 +1,35 @@
+.hamburger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: rem(30);
+  height: rem(30);
+  cursor: pointer;
+  position: relative;
+
+  &__menu-icon {
+    height: 2px;
+    width: rem(30);
+    background-color: #000000;
+    position: relative;
+    cursor: pointer;
+
+    &:before {
+      content: "";
+      height: 2px;
+      width: rem(30);
+      position: absolute;
+      background-color: #000000;
+      bottom: 8px;
+    }
+
+    &:after {
+      content: "";
+      height: 2px;
+      width: rem(30);
+      position: absolute;
+      background-color: #000000;
+      top: 8px;
+    }
+  }
+}

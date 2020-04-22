@@ -1,3 +1,9 @@
+// base active class
+
+.is-active {
+  color: $isActiveColor;
+}
+
 // nav item active class
 
 .nav-active {
@@ -16,18 +22,13 @@
   }
 }
 
-// base active class
-
-.is-active {
-  color: $isActiveColor;
-}
-
 // slider-menu active class
 
 .el-active {
   background: #FFFFFF;
 }
-.el-active > .banner-slider-nav__icon {
+
+.el-active > .slider-nav__icon {
   fill: #3A637E;
 }
 

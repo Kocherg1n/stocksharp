@@ -1,0 +1,27 @@
+.footer-nav {
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+
+    @include tablet {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__item {
+    margin-right: 25px;
+
+    @include phone {
+       margin: 0 0 15px 0;
+     }
+
+    @include phone-m {
+      font-size: 13px;
+    }
+  }
+
+  &__link {
+    color: #A2A2A2;
+  }
+}
