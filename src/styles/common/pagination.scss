@@ -12,6 +12,11 @@
     height: 20px;
     border-radius: 50%;
 
+    @include phone {
+      width: 15px;
+      height: 15px;
+    }
+
     &:last-child {
       margin-right: 0;
     }
