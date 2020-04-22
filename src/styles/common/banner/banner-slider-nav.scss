@@ -1,0 +1,46 @@
+.banner-slider-nav {
+  background-color: rgba(45, 53, 58, 0.7);
+  padding: 40px 0;
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  &__circle {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: #3A637E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+
+  &__icon {
+    width: 30px;
+    height: 30px;
+    fill: #FFFFFF;
+  }
+
+  &__name {
+    font-size: 15px;
+    color: $secondFontColor;
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 36px;
+    color: $secondFontColor;
+    margin-right: 90px;
+  }
+}

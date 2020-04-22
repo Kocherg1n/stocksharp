@@ -1,0 +1,38 @@
+// personal area
+.personal-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__enter {
+    display: block;
+    margin-right: 10px;
+  }
+
+  &__registration {
+    display: block;
+    margin-right: 10px;
+  }
+
+  &__login-icon {
+    width: 28px;
+    height: 28px;
+    fill: #000000;
+
+    &:hover {
+      fill: $isActiveColor;
+      transition: $speed;
+    }
+  }
+
+  &__user-icon {
+    width: 28px;
+    height: 28px;
+    fill: #000000;
+
+    &:hover {
+      fill: $isActiveColor;
+      transition: $speed;
+    }
+  }
+}

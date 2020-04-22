@@ -1,0 +1,32 @@
+/* nav style */
+.nav {
+
+  &__list {
+    display: flex;
+   }
+
+  &__item {
+    margin-right: 15px;
+    position: relative;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 80%;
+      height: 2px;
+      background-color: transparent;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__link {
+    color: $mainFontColor;
+  }
+}

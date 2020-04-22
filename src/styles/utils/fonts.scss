@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'FiraSans-Medium';
+  src: url('/fonts/FiraSans-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FiraSans-SemiBold';
+  src: url('/fonts/FiraSans-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@mixin FiraSans-Medium() {
+  font-family: $mainFont;
+  font-weight: 500;
+}
+
+@mixin FiraSans-SemiBold() {
+  font-family: $mainFont;
+  font-weight: 600;
+}

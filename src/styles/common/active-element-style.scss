@@ -1,0 +1,38 @@
+// nav item active class
+
+.nav-active {
+  color: $isActiveColor;
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 80%;
+    height: 2px;
+    background-color: $isActiveColor;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+// base active class
+
+.is-active {
+  color: $isActiveColor;
+}
+
+// slider-menu active class
+
+.el-active {
+  background: #FFFFFF;
+}
+.el-active > .banner-slider-nav__icon {
+  fill: #3A637E;
+}
+
+// pagination active class
+
+.p-active {
+  background: #FFFFFF;
+}

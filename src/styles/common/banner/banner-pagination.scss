@@ -1,0 +1,25 @@
+.baner-pagination {
+  z-index: 99999;
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    margin-right: 10px;
+    border: 2px solid #FFFFFF;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+}

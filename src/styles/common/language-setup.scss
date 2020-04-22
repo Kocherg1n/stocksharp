@@ -1,0 +1,12 @@
+// language setup
+.language-setup {
+
+  &__button {
+
+    margin-right: 5px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

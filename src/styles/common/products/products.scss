@@ -1,0 +1,139 @@
+.products {
+  padding: 30px 0 120px 0;
+
+  &__list {
+    display: grid;
+    grid-template-areas: "tr-platform tr-platform training" "tr-platform tr-platform training" "prices tr-robots dev";
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+  }
+
+  &__item {
+
+  }
+
+  &__link {
+    position: relative;
+    display: flex;
+
+    &:before {
+      position: absolute;
+      content: '';
+      display: block;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(180deg, #222424 0%, #222424 56.77%);
+      opacity: 0.4;
+    }
+  }
+
+  &__link-img {
+    height: 100%;
+    width: 100%;
+  }
+
+  &__link-tr-platform {
+    position: relative;
+    display: flex;
+
+    &:after {
+      content: 'Торговые Платформы';
+      display: block;
+      position: absolute;
+      bottom: 45px;
+      left: 45px;
+      font-size: 36px;
+      color: #FFFFFF;
+      padding-right: 50%;
+    }
+  }
+
+  &__link-training {
+    position: relative;
+    display: flex;
+
+    &:after {
+      content: 'Обучение Алготрейдингу';
+      display: block;
+      position: absolute;
+      bottom: 45px;
+      left: 45px;
+      font-size: 36px;
+      color: #FFFFFF;
+    }
+  }
+
+  &__link-prices {
+    position: relative;
+    display: flex;
+
+    &:after {
+      content: 'Купить Коннекторы';
+      display: block;
+      position: absolute;
+      bottom: 36px;
+      left: 36px;
+      font-size: 26px;
+      color: #FFFFFF;
+    }
+  }
+
+  &__link-tr-robots {
+    position: relative;
+    display: flex;
+
+    &:after {
+      content: 'Торговые Роботы';
+      display: block;
+      position: absolute;
+      bottom: 36px;
+      left: 36px;
+      font-size: 26px;
+      color: #FFFFFF;
+    }
+  }
+
+  &__link-dev {
+    position: relative;
+    display: flex;
+
+    &:after {
+      content: 'Разработка решений';
+      display: block;
+      position: absolute;
+      bottom: 36px;
+      left: 36px;
+      font-size: 26px;
+      color: #FFFFFF;
+    }
+  }
+}
+
+// grids =====>
+
+#trading-platforms {
+  grid-area: tr-platform;
+}
+
+#training {
+  grid-area: training;
+}
+
+#prices {
+  grid-area: prices;
+}
+
+#trading-robots {
+  grid-area: tr-robots;
+}
+
+#development {
+  grid-area: dev;
+}

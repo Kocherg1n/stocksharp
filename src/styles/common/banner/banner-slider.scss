@@ -1,0 +1,186 @@
+.banner-slider {
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  height: 100%;
+  position: relative;
+
+  &__list {
+    display: flex;
+    position: relative;
+  }
+
+  &__item {
+    width: 100vw;
+    height: 800px;
+    display: flex;
+  }
+
+  ////
+
+  &__page-prices {
+    background-image: url("../../../img/sl1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      display: block;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+    }
+  }
+
+  &__trading-robots {
+    background-image: url("../../../img/sl2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      display: block;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+    }
+  }
+
+  &__trading-platforms {
+    background-image: url("../../../img/sl3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      display: block;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+    }
+  }
+
+  &__training {
+    background-image: url("../../../img/sl4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      display: block;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+    }
+  }
+
+  &__developmend {
+    background-image: url("../../../img/sl5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      display: block;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+    }
+  }
+
+  ////
+
+  &__link {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    z-index: 20;
+  }
+
+  &__pic {
+    height: 100%;
+    width: 100%;
+  }
+
+  &__desc {
+    position: relative;
+    color: $secondFontColor;
+    padding: 16% 49% 0 0;
+    margin-left: 10%;
+  }
+
+  &__brand {
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  &__title {
+    margin-bottom: 25px;
+  }
+
+  &__text {
+    padding-right: 25%;
+    line-height: $mainLineHeight;
+  }
+
+  &__button-prev {
+    position: absolute;
+    left: 110px;
+    top: 40%;
+    transform: translateY(-50%);
+    z-index: 30;
+  }
+
+  &__button-next {
+    position: absolute;
+    right: 110px;
+    top: 40%;
+    transform: translateY(-50%);
+    z-index: 30;
+  }
+
+  &__button-icon {
+    width: 27px;
+    height: 51px;
+    fill: #FFFFFF;
+  }
+
+  &__pagination {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20;
+    bottom: 250px;
+  }
+
+  &__nav {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 30;
+  }
+}
+
+
