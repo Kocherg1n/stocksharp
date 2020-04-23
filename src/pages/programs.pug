@@ -1,15 +1,9 @@
-doctype html
-html(lang="ru")
-  block head
-    head
-      meta(charset="utf-8")
-      title 'Программы'
-      meta(content="width=device-width, initial-scale=1" name="viewport")
-      meta(content="ie=edge" http-equiv="x-ua-compatible")
-      link(rel="stylesheet" href="css/style.min.css")
-  body
-    .wrapper
-      include ../pages/common/header
-      include ../pages/includes/programs/program-banner
-      block scripts
-        script(src='js/main.min.js')
+extends common/layout
+block variables
+  - var title = 'Программы'
+
+block content
+  include includes/programs/programs-banner
+  include includes/programs/programs-description
+  include includes/programs/programs-all
+  include common/download-buttons

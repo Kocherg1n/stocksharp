@@ -158,15 +158,14 @@
   &__text {
     padding-right: 25%;
     line-height: $mainLineHeight;
+    font-size: 18px;
 
     @include phone {
       padding: 0 10%;
-      font-size: 17px;
     }
 
     @include phone-m {
       padding: 0;
-      font-size: 16px;
     }
   }
 

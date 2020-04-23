@@ -1,0 +1,124 @@
+.programs-all {
+  background-image: url("../../img/pic6.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 95px 0 40px 0;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+  }
+
+  &__title {
+    font-size: 36px;
+    color: $secondFontColor;
+    z-index: 10;
+    position: relative;
+    margin-bottom: 80px;
+  }
+
+  &__list {
+    z-index: 10;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    width: calc(100% / 3 - 20px);
+    margin-bottom: 60px;
+
+    ////
+
+    &:nth-child(1) {
+      @include phone {
+        display: block;
+      }
+    }
+
+    &:nth-child(2) {
+      @include phone {
+        display: block;
+      }
+    }
+
+    ////
+
+    @include tablet {
+      width: calc(100% / 2 - 20px);
+    }
+
+    @include phone {
+      width: 100%;
+      padding: 0 10% 60px 10%;
+      margin-bottom: 20px;
+      display: none;
+    }
+
+    @include phone-m {
+      width: 100%;
+      padding: 0 0 0 60px;
+    }
+  }
+
+  &__name {
+    font-weight: 600;
+    color: #888888;
+    font-size: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #888888;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+
+  &__desc {
+    font-size: 16px;
+    color: $secondFontColor;
+    display: flex;
+    align-items: flex-start;
+    line-height: $mainLineHeight;
+
+    &:before {
+      content: '';
+      display: block;
+      background: #2D9CDB;
+      border-radius: 2px;
+      min-width: 19px;
+      min-height: 19px;
+      margin-right: 20px;
+    }
+  }
+
+  &__button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+
+  &__button-download {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ACACAC;
+    font-size: 25px;
+    color: $secondFontColor;
+    position: relative;
+    z-index: 10;
+    display: none;
+
+
+    @include phone {
+      display: block;
+    }
+  }
+}

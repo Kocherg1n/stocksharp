@@ -51,6 +51,21 @@ ul, li {
   padding: 0;
 }
 
+.button--download {
+  font-size: 18px;
+  color: $mainFontColor;
+  border-bottom: 1px solid #BABABA;
+  padding-bottom: 6px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  z-index: 10;
+  position: relative;
+
+  &--white {
+    color: $secondFontColor;
+  }
+}
+
 a {
   text-decoration: none;
 }
@@ -59,7 +74,6 @@ a {
   max-width: 95%;
   width: 1180px;
   margin: 0 auto;
-  //position: relative;
 }
 
 .wrapper {

@@ -40,8 +40,38 @@
 
 @import "common/footer-nav";
 
-@import "page-modules/programs/program-banner";
+@import "page-modules/programs/programs-banner";
 
-@import "page-modules/programs/program-slider";
+@import "common/programs-slider";
+
+@import "page-modules/programs/programs-description";
+
+@import "page-modules/programs/programs-all";
+
+@import "common/download-buttons";
+
+@import "page-modules/designer/designer-banner";
+
+@import "page-modules/designer/designer-description";
+
+@import "page-modules/data/data-banner";
+
+@import "page-modules/data/data-description";
+
+@import "page-modules/shell/shell-banner";
+
+@import "page-modules/shell/shell-description";
+
+@import "page-modules/shell/shell-features";
+
+@import "page-modules/terminal/terminal-banner";
+
+@import "page-modules/terminal/terminal-description";
+
+@import "page-modules/api/api-banner";
+
+@import "page-modules/api/api-description";
+
+@import "page-modules/api/api-features";
 
 @import "common/active-element-style";

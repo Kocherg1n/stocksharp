@@ -1,0 +1,69 @@
+.shell-features {
+  padding-top: 40px;
+
+  &__title {
+    font-size: 44px;
+    color: $mainFontColor;
+
+    @include phone {
+      font-size: 40px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+
+    @include phone {
+      padding: 0 5%;
+      margin-top: 40px;
+    }
+
+    @include phone-m{
+      padding: 0;
+    }
+  }
+
+  &__item {
+    margin-bottom: 60px;
+  }
+
+  &__name {
+    font-weight: 600;
+    color: #888888;
+    font-size: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #888888;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+
+  &__desc {
+    font-size: 16px;
+    color: $mainFontColor;
+    display: flex;
+    align-items: flex-start;
+    line-height: $mainLineHeight;
+
+    &:before {
+      content: '';
+      display: block;
+      background: #2D9CDB;
+      border-radius: 2px;
+      min-width: 19px;
+      min-height: 19px;
+      margin-right: 10px;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__button-download {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ACACAC;
+    font-size: 25px;
+  }
+}

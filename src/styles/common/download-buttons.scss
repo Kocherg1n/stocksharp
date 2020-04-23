@@ -1,0 +1,16 @@
+.download-buttons {
+  padding: 50px 0;
+  background-color: #FFFFFF;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: none;
+
+  @include phone {
+    display: flex;
+  }
+
+  &__button {
+    margin-bottom: 30px;
+  }
+}

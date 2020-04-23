@@ -1,0 +1,125 @@
+.api-features {
+  background: #F9F9F9;
+  padding: 74px 0 100px 0;
+
+  @include phone {
+    padding: 44px 0 60px 0;
+  }
+
+  &__title {
+    font-size: 44px;
+    color: $mainFontColor;
+    margin-bottom: 80px;
+
+    @include phone {
+      font-size: 33px;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    width: calc(100% / 3 - 30px);
+    margin-bottom: 60px;
+
+    ////
+
+    &:nth-child(1) {
+      @include phone {
+        display: block;
+      }
+    }
+
+    &:nth-child(2) {
+      @include phone {
+        display: block;
+      }
+    }
+
+    ////
+
+    @include tablet {
+      width: calc(100% / 2 - 20px);
+    }
+
+    @include phone {
+      width: 100%;
+      padding: 0 10% 60px 10%;
+      margin-bottom: 20px;
+      display: none;
+    }
+
+    @include phone-m {
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  &__name {
+    font-weight: 600;
+    color: #888888;
+    font-size: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #888888;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+
+  &__desc {
+    font-size: 16px;
+    color: $mainFontColor;
+    display: flex;
+    align-items: flex-start;
+    line-height: $mainLineHeight;
+
+    &:before {
+      content: '';
+      display: block;
+      background: #2D9CDB;
+      border-radius: 2px;
+      min-width: 19px;
+      min-height: 19px;
+      margin-right: 15px;
+    }
+  }
+
+  &__button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: center;
+
+    @include phone {
+      display: none;
+    }
+  }
+
+  &__button-documents {
+    margin-left: 30px;
+  }
+
+
+  &__button-download {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ACACAC;
+    font-size: 25px;
+    color: $mainFontColor;
+    display: none;
+
+    @include phone {
+      display: block;
+    }
+  }
+}

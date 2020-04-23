@@ -1,0 +1,122 @@
+.api-description {
+
+  &__content {
+    padding-top: 50px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+
+    @include tablet {
+      flex-wrap: wrap;
+    }
+
+    @include phone {
+      justify-content: center;
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+
+    @include phone {
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__name {
+    font-size: 46px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 15px;
+
+    @include phone {
+      font-size: 40px;
+      text-align: center;
+    }
+  }
+
+  &__desc {
+    font-size: 21px;
+    color: #828282;
+
+    @include tablet {
+      padding-right: 30%;
+    }
+
+    @include phone {
+      text-align: center;
+      margin-bottom: 30px;
+      padding: 0;
+    }
+  }
+
+  &__elements {
+    margin-top: 30px;
+
+    @include phone {
+      display: none;
+    }
+  }
+
+  &__el {
+    font-size: 16px;
+    line-height: $mainLineHeight;
+  }
+
+  &__el {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+
+  &__pic {
+    min-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__button {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ACACAC;
+    font-size: 25px;
+    display: none;
+    margin-top: 20px;
+
+    @include phone {
+      display: inline-block;
+      margin: 0;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+    @include phone {
+      display: none;
+    }
+  }
+
+  &__button-download {
+    margin-right: 30px;
+  }
+}
