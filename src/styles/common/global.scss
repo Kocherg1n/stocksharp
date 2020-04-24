@@ -42,6 +42,10 @@ ul, li {
   list-style-type: none;
 }
 
+input {
+  outline: none;
+}
+
 .button, button {
   cursor: pointer;
   background-color: transparent;
@@ -84,4 +88,6 @@ a {
   font-size: 46px;
   font-weight: 600;
 }
+
+
 

@@ -1,0 +1,94 @@
+.robot-description {
+  padding: 80px 0;
+
+
+  &__content {
+    display: flex;
+    margin: 0 10%;
+    justify-content: space-between;
+
+    @include laptop {
+      margin: 0;
+    }
+
+    @include tablet {
+      flex-direction: column;
+    }
+  }
+
+  &__slider {
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include tablet {
+      margin-top: 30px;
+    }
+  }
+
+  &__title {
+    font-size: 44px;
+
+    @include phone {
+      font-size: 40px;
+      text-align: center;
+    }
+  }
+
+  &__buy {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+
+    @include phone {
+      justify-content: center;
+    }
+  }
+
+  &__button-buy {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 15px;
+    background: #2D9CDB;
+    font-weight: 600;
+    padding: 10px 20px;
+    color: $secondFontColor;
+  }
+
+  &__price {
+    border: 1px solid #E0E0E0;
+    font-size: 15px;
+    padding: 10px 20px;
+  }
+
+  &__more {
+    border-top: 1px solid #E0E0E0;
+    padding-top: 40px;
+    margin: 30px 10% 0 10%;
+
+    @include laptop {
+      margin: 30px 5% 0 5%;
+      text-align: center;
+    }
+
+  }
+
+  &__subtitle {
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 22px;
+
+    @include phone {
+      text-align: center;
+    }
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: $mainLineHeight;
+  }
+}

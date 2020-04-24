@@ -1,0 +1,44 @@
+.robot-slider {
+
+
+  &__list {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: flex-end;
+
+    @include tablet {
+      justify-content: center;
+    }
+  }
+
+  &__item {
+    margin-right: 40px;
+
+    @include tablet {
+      margin-right: 20px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__item {
+    width: 120px;
+    height: 100px;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__controls {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__button-prev {
+    margin-right: 130px;
+  }
+}

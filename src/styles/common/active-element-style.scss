@@ -22,18 +22,62 @@
   }
 }
 
-// slider-menu active class
+// slider-nav active class
 
-.el-active {
-  background: #FFFFFF;
-}
 
-.el-active > .slider-nav__icon {
+.el-active .learning-slider-nav__link > .learning-slider-nav__circle {
+   background: #FFFFFF;
+ }
+
+.el-active .learning-slider-nav__link > .learning-slider-nav__circle > .learning-slider-nav__icon {
   fill: #3A637E;
 }
 
-// pagination active class
+.el-active .slider-nav__link > .slider-nav__circle {
+  background: #FFFFFF;
+}
+
+.el-active .slider-nav__link > .slider-nav__circle > .slider-nav__icon {
+  fill: #3A637E;
+}
+
+
+// slider pagination active class
 
 .p-active {
   background: #FFFFFF;
+}
+
+// trading-robots catalog item active class
+
+.item-active {
+  background: linear-gradient(110.37deg, #0368AC 32.88%, #4A9AD0 89.56%);
+  color: #FFFFFF;
+}
+
+.item-active > .trading-robots__more {
+  display: none;
+}
+
+.item-active > .trading-robots__reviews {
+  display: block;
+}
+
+.item-active > .trading-robots__dropdown {
+  display: flex;
+}
+
+.item-active .trading-robots__pic > .trading-robots__img {
+  display: none;
+}
+
+.item-active .trading-robots__pic > .trading-robots__img-active {
+  display: block;
+}
+
+// robot-slider active element class
+
+.sl-active {
+  height: 140px;
+  width: 180px;
 }

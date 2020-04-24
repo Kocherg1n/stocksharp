@@ -1,0 +1,75 @@
+.how-it-works {
+  background: #F9F9F9;
+
+  &__content {
+    padding: 60px 10% 60px 10%;
+
+    @include laptop {
+      padding: 60px 0;
+    }
+
+    @include phone {
+      padding: 60px 5% 60px 5%;
+    }
+  }
+
+  &__title {
+    font-size: 32px;
+
+    @include phone {
+      text-align: center;
+    }
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: $mainLineHeight;
+  }
+
+  &__text-full {
+    @include phone {
+      display: none;
+    }
+  }
+
+  &__text-mobile {
+    display: none;
+    text-align: center;
+
+    @include phone {
+      display: block;
+    }
+  }
+
+  &__instruction {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+  }
+
+  &__link {
+    text-transform: uppercase;
+    color: #2D9CDB;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  &__controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__button {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ACACAC;
+    font-size: 25px;
+    display: none;
+    margin-top: 20px;
+
+    @include phone {
+      display: block;
+    }
+  }
+}
