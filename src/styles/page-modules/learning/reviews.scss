@@ -1,0 +1,17 @@
+.reviews {
+  background: #F9F9F9;
+  padding: 60px 10%;
+
+  @include laptop {
+    padding: 30px 0;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 44px;
+
+    @include phone {
+      font-size: 40px;
+    }
+  }
+}

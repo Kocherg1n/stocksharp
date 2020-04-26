@@ -1,0 +1,206 @@
+.download {
+  padding: 90px 0 200px 0;
+  @include phone {
+    padding: 45px 0 70px 0;
+  }
+
+  &__title {
+    font-size: 44px;
+    font-weight: 600;
+
+    @include phone {
+      font-size: 40px;
+      text-align: center;
+    }
+
+    @include phone-m {
+      font-size: 33px;
+      text-align: center;
+    }
+  }
+
+  &__filter-search {
+    display: flex;
+
+    @include laptop {
+      justify-content: space-between;
+    }
+
+    @include phone {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__controls {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+
+    @include laptop {
+      flex-direction: column;
+    }
+  }
+
+  &__filter {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    margin-right: 150px;
+
+    @include laptop {
+      margin-right: 0;
+    }
+
+    @include phone {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__search {
+    display: flex;
+
+    @include phone {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__download {
+    margin-right: 50px;
+
+    @include laptop {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-top: 30px;
+      margin-right: 0;
+    }
+
+    @include phone {
+      display: none;
+    }
+  }
+
+  &__download-button {
+    background: #525252;
+    padding: 10px 35px;
+    color: $secondFontColor;
+    font-size: 16px;
+    border: 1px solid #525252;
+  }
+
+  &__catalog {
+    margin-top: 160px;
+    margin-bottom: 120px;
+
+    @include laptop {
+      margin-top: 80px;
+    }
+
+    @include phone {
+      margin-top: 50px;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-right: -60px;
+
+    @include laptop {
+      margin-right: -20px;
+    }
+
+    @include tablet {
+      margin-right: -10px;
+    }
+
+    @include phone {
+      margin-right: 0;
+    }
+
+  }
+
+  &__item {
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 280px;
+    max-width: 290px;
+    margin-bottom: 60px;
+    margin-right: 60px;
+    position: relative;
+    background: #FFFFFF;
+    padding: 46px 5px 32px 36px;
+
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(110.37deg, #0368AC 32.88%, #4A9AD0 89.56%);
+    }
+
+    @include laptop {
+      margin-right: 20px;
+    }
+
+    @include tablet {
+      margin-right: 10px;
+    }
+
+    @include phone {
+      margin-right: 0;
+      width: 100%;
+      max-width: 100%;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+      text-align: center;
+    }
+  }
+
+  &__pic {
+    margin-bottom: 30px;
+  }
+
+  &__img {
+    height: 90px;
+  }
+
+  &__name {
+    font-size: 28px;
+    position: relative;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    text-align: left;
+
+    @include phone {
+      text-align: center;
+    }
+  }
+
+  &__get {
+    font-weight: bold;
+    font-size: 16px;
+    color: #2D9CDB;
+    padding-bottom: 14px;
+  }
+
+  &__license {
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+    color: #2D9CDB;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}

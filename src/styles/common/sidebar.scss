@@ -1,0 +1,51 @@
+.sidebar {
+  background: #F4F4F4;
+  padding: 30px 25px 80px 25px;
+  margin-left: 30px;
+
+  &__title {
+    font-weight: 600;
+    margin-bottom: 40px;
+  }
+
+  &__topics-title {
+    font-weight: 600;
+    margin-top: 100px;
+  }
+
+  &__news-list {
+    margin-top: 40px;
+    position: relative;
+
+    &:after {
+      position: absolute;
+      content: '';
+      display: block;
+      height: 1px;
+      background-color: black;
+      width: 100%;
+      bottom: -50px;
+    }
+  }
+
+  &__topics-list {
+    margin-top: 40px;
+  }
+
+  &__news-item, .sidebar__topics-item {
+    margin-bottom: 20px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+
+
+
+  &__news-link, .sidebar__topics-link {
+    font-size: 15px;
+    color: $mainFontColor;
+    font-weight: 500;
+  }
+}

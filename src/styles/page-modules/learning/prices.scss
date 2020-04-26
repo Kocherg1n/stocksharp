@@ -1,0 +1,170 @@
+.prices {
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+
+  @include laptop {
+    padding: 0 0 40px 0;
+  }
+
+  &__title {
+    @include phone {
+      text-align: center;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    margin-right: -30px;
+
+
+    @include tablet {
+      margin-right: -20px;
+    }
+
+    @include phone {
+      margin-right: 0;
+    }
+  }
+
+  &__item {
+    background: linear-gradient(127.87deg, #0368AC 32.88%, #4A9AD0 89.56%);
+    width: calc(100% / 3 - 30px);
+    margin-right: 30px;
+    position: relative;
+    margin-bottom: 30px;
+
+
+    @include tablet {
+      width: calc(100% / 2 - 20px);
+      margin-right: 20px;
+    }
+
+    @include phone {
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+
+  &__label {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    //padding: 50px 70px;
+  }
+
+  &__checkbox-icon {
+    border: 2px solid #FFFFFF;
+    width: 25px;
+    height: 25px;
+    border-radius: 3px;
+    display: flex;
+    position: relative;
+    margin-top: 50px;
+
+    &:before {
+      content: url("img/sprite/checked.svg");
+      display: block;
+      transition: .2s;
+      position: absolute;
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &__checkbox {
+    position: absolute;
+    left: -999999999px;
+    opacity: 0;
+  }
+
+  &__checkbox:checked + .prices__checkbox-icon {
+    background-color: #FFFFFF;
+  }
+
+  &__checkbox:checked + .prices__checkbox-icon:before {
+    opacity: 1;
+  }
+
+  &__name {
+    font-weight: 600;
+    font-size: 25px;
+    color: $secondFontColor;
+    padding: 0 20% 50px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__dropdown {
+    position: absolute;
+    width: 100%;
+    padding: 45px 35px;
+    box-shadow: 0 4px 23px rgba(0, 0, 0, 0.1);
+    background-color: #FFFFFF;
+    z-index: 20;
+    bottom: -317%;
+    left: 0;
+    display: none;
+
+    @include laptop {
+      bottom: -345%;
+    }
+
+    @include tablet {
+      bottom: -330%;
+    }
+  }
+
+  &__dropdown-name {
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #2D9CDB;
+    text-align: center;
+  }
+
+  &__dropdown-text {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #202020;
+    margin-bottom: 15px;
+  }
+
+  &__controls {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__subtitle {
+    font-size: 26px;
+  }
+
+  &__options {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+
+    @include phone {
+      flex-direction: column;
+    }
+  }
+
+
+  &__table-options {
+    height: 100%;
+    margin-right: 50px;
+    flex: 1;
+
+    @include phone {
+      margin-right: 0;
+    }
+  }
+}
+

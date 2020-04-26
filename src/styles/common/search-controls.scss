@@ -1,0 +1,22 @@
+.search-controls {
+  display: flex;
+
+  &__input {
+    margin-right: 14px;
+    background: transparent;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+    min-width: 300px;
+    border: none;
+
+    @include phone {
+      min-width: 175px;
+    }
+  }
+
+  &__button {
+    border: 1px solid #202020;
+    padding: 10px 25px;
+    font-size: 16px;
+  }
+}
+

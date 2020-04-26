@@ -81,3 +81,24 @@
   height: 140px;
   width: 180px;
 }
+
+// prices list active class
+
+.pr-active > .prices__dropdown{
+  display: block;
+}
+
+// find-broker catalog item active class
+
+.b-active {
+  background: linear-gradient(110.37deg, #0368AC 32.88%, #4A9AD0 89.56%);
+  color: $secondFontColor;
+}
+
+.b-active > .find-broker__dropdown, .find-broker__reviews {
+  display: flex;
+}
+
+.b-active > .find-broker__more {
+  display: none;
+}

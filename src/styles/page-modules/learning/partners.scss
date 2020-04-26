@@ -1,0 +1,34 @@
+.partners {
+  padding: 50px 0 120px 0;
+
+  &__title {
+    text-align: center;
+    font-size: 44px;
+    margin-bottom: 90px;
+
+    @include phone {
+      font-size: 40px;
+    }
+  }
+
+  &__slider {
+    margin-top: 60px;
+    position: relative;
+
+    &:before {
+      content: '';
+      display: block;
+      background-color: #888888;
+      width: 80%;
+      height: 1px;
+      position: absolute;
+      bottom: -100px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__thenks {
+    padding-top: 160px;
+  }
+}

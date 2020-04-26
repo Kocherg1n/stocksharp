@@ -1,0 +1,241 @@
+.find-broker {
+  padding: 90px 0 200px 0;
+  @include phone {
+    padding: 45px 0 70px 0;
+  }
+
+  &__title {
+    font-size: 44px;
+    font-weight: 600;
+
+    @include phone {
+      font-size: 40px;
+      text-align: center;
+    }
+
+    @include phone-m {
+      font-size: 33px;
+      text-align: center;
+    }
+  }
+
+  &__filter-search {
+    display: flex;
+
+    @include laptop {
+      justify-content: space-between;
+    }
+
+    @include phone {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__controls {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+
+    @include laptop {
+      flex-direction: column;
+    }
+  }
+
+  &__filter {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    margin-right: 150px;
+
+    @include laptop {
+      margin-right: 0;
+    }
+
+    @include phone {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__search {
+    display: flex;
+
+    @include phone {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__download {
+    margin-right: 50px;
+
+    @include laptop {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-top: 30px;
+      margin-right: 0;
+    }
+
+    @include phone {
+      display: none;
+    }
+  }
+
+  &__download-button {
+    background: #525252;
+    padding: 10px 35px;
+    color: $secondFontColor;
+    font-size: 16px;
+    border: 1px solid #525252;
+  }
+
+  &__catalog {
+    margin-top: 160px;
+
+    @include laptop {
+      margin-top: 80px;
+    }
+
+    @include phone {
+      margin-top: 50px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -20px;
+
+    @include phone {
+      margin: 0;
+    }
+  }
+
+  &__item {
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 45px;
+    width: calc(100% / 4 - 20px);
+    min-width: 260px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    position: relative;
+    background: #FFFFFF;
+
+    @include laptop {
+      width: calc(100% / 3 - 20px);
+    }
+
+    @include tablet {
+      width: calc(100% / 2 - 20px);
+    }
+
+    @include phone {
+      width: 100%;
+      margin: 0 0 40px 0;
+    }
+  }
+
+  &__pic {
+    margin-bottom: 30px;
+  }
+
+  &__img {
+    height: 90px;
+  }
+
+
+  &__name {
+    font-weight: 600;
+    font-size: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    padding: 0 10%;
+    margin-bottom: 30px;
+  }
+
+  &__count {
+    font-size: 17px;
+    margin-bottom: 13px;
+  }
+
+  &__more {
+    color: #2D9CDB;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+
+  &__reviews {
+    display: none;
+    font-size: 16px;
+    color: $secondFontColor;
+  }
+
+  &__dropdown {
+    padding: inherit;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -74%;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+    background: #FFFFFF;
+    z-index: 20;
+
+    @include tablet {
+    bottom: -75%;
+    }
+  }
+
+  &__criteria {
+    color: #2D9CDB;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    letter-spacing: 3px;
+  }
+
+  &__criteria-list {
+    margin-bottom: 25px;
+  }
+
+  &__criteria-item {
+    font-size: 17px;
+    margin-bottom: 10px;
+    position: relative;
+    padding-bottom: 8px;
+    color: $mainFontColor;
+  }
+
+  &__get-button {
+    color: #2D9CDB;
+    padding: 12px 20px;
+    text-transform: uppercase;
+    border: 2px solid #2D9CDB;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+
+  &__pagination {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 90px;
+    margin-right: 10%;
+
+    @include phone {
+      margin: 40px 0 0 0;
+      justify-content: center;
+    }
+  }
+}

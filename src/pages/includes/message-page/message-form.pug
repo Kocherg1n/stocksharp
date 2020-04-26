@@ -1,0 +1,17 @@
+form.message-form
+  .message-form__row
+    label.message-form__label
+      .message-form__name Заголовок
+      input(type='text' placeholder='Минимум 10 символов' required).message-form__input
+  .message-form__row
+    label.message-form__label
+      .message-form__name Теги
+      input(type='text' placeholder='Через запятую (минимум 3 бувкы)' required).message-form__input
+  .message-form__row
+    label.message-form__label
+      .message-form__name-textarea Текст сообщения
+      textarea(placeholder='Введите текст сообщение...' required).message-form__textarea
+  .message-form__controls
+    button(type='submit').message-form__button-submit Предпросмотр
+    button(type='submit').message-form__button-submit Опубликовать
+

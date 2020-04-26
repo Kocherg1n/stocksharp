@@ -24,13 +24,21 @@
 
 @import "common/sub-nav";
 
+@import "common/page-pagination";
+
 @import "common/banner";
+
+@import "common/youtube-btn";
+
+@import "common/sidebar";
 
 @import "page-modules/index/index-slider";
 
 @import "common/slider-nav";
 
 @import "common/pagination";
+
+@import "common/search-controls";
 
 @import "page-modules/index/products";
 
@@ -39,6 +47,10 @@
 @import "common/footer";
 
 @import "common/footer-nav";
+
+@import "common/filter";
+
+@import "common/nav-community";
 
 @import "page-modules/programs/programs-banner";
 
@@ -95,5 +107,57 @@
 @import "page-modules/learning/features";
 
 @import "page-modules/learning/prices";
+
+@import "page-modules/learning/options";
+
+@import "page-modules/learning/robots";
+
+@import "page-modules/learning/robots-features";
+
+@import "page-modules/learning/features-slider";
+
+@import "page-modules/learning/soft";
+
+@import "page-modules/learning/reviews";
+
+@import "page-modules/learning/reviews-slider";
+
+@import "page-modules/learning/partners";
+
+@import "page-modules/learning/partners-slider";
+
+@import "page-modules/learning/thenks-slider";
+
+@import "page-modules/learning/learning-footer";
+
+@import "page-modules/learning/total";
+
+@import "page-modules/find-broker-banner/find-broker-banner";
+
+@import "page-modules/find-broker-banner/find-broker";
+
+@import "page-modules/download/download-banner";
+
+@import "page-modules/download/download";
+
+@import "page-modules/development/development-banner";
+
+@import "page-modules/development/development";
+
+@import "page-modules/development/development-form";
+
+@import "page-modules/message-page/message-page-banner";
+
+@import "page-modules/message-page/message-form";
+
+@import "page-modules/message-page/message-page-section";
+
+@import "page-modules/forum/forum";
+
+@import "page-modules/forum/forum-table";
+
+@import "page-modules/news/news-page";
+
+@import "page-modules/news/news-table";
 
 @import "common/active-element-style";

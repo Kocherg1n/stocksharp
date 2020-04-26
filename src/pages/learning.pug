@@ -1,15 +1,20 @@
 doctype html
 html(lang="ru")
-  block head
-    head
-      meta(charset="utf-8")
-      title Обучение
-      meta(content="width=device-width, initial-scale=1" name="viewport")
-      meta(content="ie=edge" http-equiv="x-ua-compatible")
-      link(rel="stylesheet" href="css/style.min.css")
-  body
+  head
+    meta(charset="utf-8")
+    title Обучение
+    meta(content="width=device-width, initial-scale=1" name="viewport")
+    meta(content="ie=edge" http-equiv="x-ua-compatible")
+    link(rel="stylesheet" href="css/style.min.css")
+  //body
     .wrapper
       include includes/learning/learning-header
       include includes/learning/learning-slider
       include includes/learning/features
+      include includes/learning/prices
+      include includes/learning/robots
+      include includes/learning/soft
+      include includes/learning/reviews
+      include includes/learning/partners
+      include includes/learning/learning-footer
     script(src='js/main.min.js')

@@ -1,0 +1,30 @@
+.youtube-button {
+  display: flex;
+
+
+  &__button {
+    background-color: #E32C2C;
+    color: $secondFontColor;
+    font-weight: 600;
+    padding: 10px 16px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  &__counter {
+    border: 1px solid $borderLight;
+    padding: 8px 16px;
+    font-size: 14px;
+    border-left: none;
+    color: $borderLight;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__icon {
+    margin-right: 8px;
+  }
+}
