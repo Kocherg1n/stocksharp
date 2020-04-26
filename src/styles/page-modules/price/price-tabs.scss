@@ -1,0 +1,21 @@
+.price-tabs {
+  background: #FEFEFE;
+
+  &__desc {
+    width: 60%;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+
+  &__table {
+    background: #FFFFFF;
+    box-shadow: 0 4px 23px rgba(0, 0, 0, 0.1);
+    padding: 65px;
+    width: 100%;
+    margin-right: 50px;
+  }
+}

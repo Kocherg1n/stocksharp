@@ -1,0 +1,26 @@
+form.new-theme-form
+  .new-theme-form__row
+    label.new-theme-form__label
+      .new-theme-form__name Создание темы обсуждения
+      input(type='text' placeholder='Минимум 10 символов' required).new-theme-form__input
+  .new-theme-form__row
+    label.new-theme-form__label
+      .new-theme-form__name Теги
+      input(type='text' placeholder='Через запятую (минимум 3 бувкы)' required).new-theme-form__input
+  .new-theme-form__row
+    label.new-theme-form__label
+      .new-theme-form__name-textarea Текст сообщения
+      .new-theme-form__header
+        button(type='button').new-theme-form__button-preview Предпросмотр
+        button(type='button').new-theme-form__button-write Написать
+        .new-theme-form__text-transform
+          include ../../common/text-transform
+      textarea(placeholder='Введите текст сообщение...' required).new-theme-form__textarea
+      .new-theme-form__textarea-footer Добавить файлы через драг-н-дроп,
+        a(href='#').new-theme-form__link &ensp; выбрать на диске, &ensp;
+        | или вставить из буфера обмена.
+        .new-theme-form__text-transform--mobile
+          include ../../common/text-transform
+  .new-theme-form__controls
+    button(type='button').new-theme-form__button-submit Предпросмотр
+    button(type='submit').new-theme-form__button-submit Опубликовать

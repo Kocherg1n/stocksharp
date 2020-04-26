@@ -1,0 +1,41 @@
+.text-transform {
+  border: 1px solid $borderLight;
+  padding: 4px 10px;
+
+
+  @include tablet {
+    border-right: none;
+    border-top: none;
+    border-left: none;
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include phone {
+      justify-content: space-between;
+    }
+  }
+
+  &__item {
+    margin-right: 15px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    @include phone {
+      margin-right: 7px;
+      padding: 4px 0;
+
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

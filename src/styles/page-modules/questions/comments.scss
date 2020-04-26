@@ -1,0 +1,117 @@
+.comments {
+  padding: 30px 0 80px 0;
+  border-top: 1px solid $borderLight;
+
+  @include phone {
+    padding: 30px 0 0 0;
+  }
+
+  &__counter {
+    margin-bottom: 30px;
+    font-size: 22px;
+  }
+
+  &__new {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  &__user-logo {
+    margin-right: 60px;
+
+    @include laptop {
+      margin-right: 30px;
+    }
+
+    @include phone {
+      width: 60px;
+      display: none;
+    }
+  }
+
+  &__user-logo-icon {
+    height: 140px;
+
+    @include laptop {
+      width: 100px;
+    }
+  }
+
+  &__textarea {
+    padding: 15px 20px;
+    border: 1px solid $borderLight;
+    outline: none;
+    flex: 1;
+    min-height: 85px;
+    resize: none;
+
+    &::placeholder {
+      color: $borderLight;
+    }
+  }
+
+  &__item {
+    border-top: 1px solid $borderLight;
+    display: flex;
+    align-items: end;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    @include phone {
+      flex-direction: column;
+    }
+  }
+
+  &__user {
+    width: 140px;
+    margin-right: 70px;
+
+    @include laptop {
+      margin-right: 0;
+    }
+
+    //@include phone {
+    //  display: none;
+    //}
+  }
+
+  &__user-name {
+    font-size: 16px;
+    color: $borderLight;
+    text-align: center;
+    margin-bottom: 20px;
+
+    @include phone {
+      text-align: left;
+    }
+  }
+
+  &__date {
+    font-size: 16px;
+    color: $borderLight;
+    margin-bottom: 20px;
+  }
+
+  &__answer {
+    font-size: 16px;
+    color: $borderLight;
+  }
+
+  &__time {
+    font-size: 16px;
+    color: $borderLight;
+  }
+
+  &__comment {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__controls {
+    margin-top: 27px;
+    display: flex;
+    justify-content: space-between;
+  }
+}

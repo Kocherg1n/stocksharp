@@ -1,0 +1,73 @@
+.questions {
+  padding: 80px 0;
+
+  @include laptop {
+    padding: 30px 0;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 26px;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+
+    @include laptop {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    margin-top: 80px;
+
+    @include laptop {
+      margin-top: 20px;
+    }
+  }
+
+  &__youtube {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 80px;
+    margin-right: 25px;
+
+    @include laptop {
+      margin-top: 20px;
+    }
+
+    @include phone {
+      display: none;
+    }
+  }
+
+  &__block {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  &__new-message {
+
+  }
+
+  &__sidebar {
+    min-width: 250px;
+    flex: 1;
+
+    @include phone {
+      display: none;
+    }
+  }
+
+  &__comments {
+    margin-top: 80px;
+    margin-right: 70px;
+
+    @include laptop {
+      margin-top: 30px;
+      margin-right: 0;
+    }
+  }
+}

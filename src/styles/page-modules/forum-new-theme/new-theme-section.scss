@@ -1,0 +1,37 @@
+.new-theme {
+  padding: 100px 0;
+
+  @include phone {
+    padding: 30px 0;
+  }
+
+  &__row {
+    display: flex;
+    padding-bottom: 40px;
+    border-bottom: 1px solid $borderLight;
+    align-items: center;
+  }
+
+  &__title {
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 26px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+    @include phone {
+      font-size: 19px;
+    }
+  }
+
+  &__prev {
+
+    @include phone {
+      display: none;
+    }
+  }
+
+  &__form {
+    margin-top: 20px;
+  }
+}

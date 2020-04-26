@@ -62,6 +62,8 @@
 
 @import "common/download-buttons";
 
+@import "common/text-transform";
+
 @import "page-modules/designer/designer-banner";
 
 @import "page-modules/designer/designer-description";
@@ -159,5 +161,23 @@
 @import "page-modules/news/news-page";
 
 @import "page-modules/news/news-table";
+
+@import "page-modules/questions/questions";
+
+@import "page-modules/questions/question-new";
+
+@import "page-modules/questions/comments";
+
+@import "page-modules/forum-new-theme/new-theme-section";
+
+@import "page-modules/forum-new-theme/new-theme-form";
+
+@import "page-modules/price/price-section";
+
+@import "page-modules/price/price-tabs";
+
+@import "page-modules/price/price-table";
+
+@import "page-modules/price/price-total";
 
 @import "common/active-element-style";
