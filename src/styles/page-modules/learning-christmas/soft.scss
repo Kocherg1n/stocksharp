@@ -1,0 +1,97 @@
+.soft-christmas {
+  position: relative;
+  padding: 50px 0;
+  background: #d6ddf5;
+
+  &:before {
+    content: '';
+    background-image: url("../../../img/bg1winter.svg");
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .5;
+  }
+
+  &__title {
+    margin-bottom: 25px;
+    text-align: center;
+    position: relative;
+    z-index: 20;
+
+    @include phone {
+      font-size: 36px;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 15px;
+    text-align: center;
+    position: relative;
+    z-index: 20;
+  }
+
+  &__text {
+    padding: 0 10%;
+    margin-top: 120px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 6% 25%;
+    grid-template-areas: ". ." ". .";
+
+    @include tablet {
+      gap: 0 13%;
+    }
+
+    @include phone {
+      display: flex;
+      flex-direction: column;
+      padding: 0 5%;
+    }
+  }
+
+
+  &__block1, .soft-christmas__block2,
+  .soft-christmas__block3, .soft-christmas__block4 {
+    font-size: 17px;
+    position: relative;
+
+    @include phone {
+      margin-bottom: 70px;
+      display: none;
+    }
+
+    &:first-child {
+      display: block;
+    }
+  }
+
+  &__digit1, .soft-christmas__digit2,
+  .soft-christmas__digit3, .soft-christmas__digit4 {
+    position: absolute;
+    top: -65px;
+    left: -65px;
+  }
+
+  &__controls {
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+    @include phone {
+      display: flex;
+    }
+  }
+
+  &__button-download {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ACACAC;
+    font-size: 25px;
+  }
+}
+
+
+

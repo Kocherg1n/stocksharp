@@ -1,0 +1,13 @@
+.language-setup-christmas {
+
+  &__button {
+
+    margin-right: 5px;
+    color: $secondFontColor;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+

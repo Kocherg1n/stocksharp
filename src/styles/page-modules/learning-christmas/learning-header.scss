@@ -1,0 +1,150 @@
+.learning-header-christmas {
+  padding: 25px 0 15px 0;
+  position: relative;
+  background: radial-gradient(42.49% 45.32% at 50% 53.33%, #DFE3EC 0%, #2568FF 100%);
+
+
+  &__bg {
+    position: absolute;
+    opacity: .4;
+    top: -140px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("../../../img/bg1winter.svg");
+    transform: rotate(180deg);
+  }
+
+  &__topheader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include laptop {
+      justify-content: space-between;
+    }
+  }
+
+  &__logo {
+    position: relative;
+    display: block;
+
+    @include phone {
+      flex: 1;
+    }
+  }
+
+  &__logo-hide {
+    display: none;
+
+    @include laptop {
+      display: block;
+    }
+  }
+
+  &__logo-text {
+    position: relative;
+    z-index: 20;
+
+    @include phone {
+      display: none;
+    }
+  }
+
+  &__logos {
+
+  }
+
+  &__logo-top {
+    display: none;
+
+    @include laptop {
+      display: block;
+      flex: 1;
+    }
+  }
+
+  &__skype {
+    font-size: 15px;
+    color: #828282;
+
+    @include laptop {
+      display: none;
+    }
+  }
+
+  &__tel {
+    @include laptop {
+      display: none;
+    }
+  }
+
+  &__tel-link {
+    color: #828282;
+    font-size: 15px;
+  }
+
+  &__logo-icon {
+    fill: #FFFFFF;
+    width: 60px;
+    height: 36px;
+
+    &-hat {
+      position: absolute;
+      top: -37px;
+      left: 0;
+    }
+
+    &-forest {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+  }
+
+  &__lang-controls {
+    @include laptop {
+      margin-right: 30px;
+    }
+  }
+
+  &__lang-controls-up {
+    display: none;
+
+    @include laptop {
+      margin-right: 20px;
+      display: block;
+    }
+  }
+
+  &__subheader {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    position: relative;
+
+    @include laptop {
+      display: none;
+    }
+  }
+
+  &__hamburger {
+    display: none;
+
+    @include laptop {
+      display: block;
+      margin-left: 20px;
+    }
+  }
+
+  &__mail-link {
+    font-weight: 600;
+    color: $secondFontColor;
+    font-size: 18px;
+
+  }
+}
+
+
+

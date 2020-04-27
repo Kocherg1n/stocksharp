@@ -1,0 +1,30 @@
+.reviews-broker {
+  background: #F9F9F9;
+  padding: 60px 10%;
+  position: relative;
+
+  &:before {
+    content: '';
+    background-image: url("../../../img/bgb.svg");
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .5;
+  }
+
+  @include laptop {
+    padding: 30px 0;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 44px;
+
+    @include phone {
+      font-size: 40px;
+    }
+  }
+}

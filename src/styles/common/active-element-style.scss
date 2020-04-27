@@ -22,12 +22,27 @@
   }
 }
 
+.nav-active-christmas {
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 80%;
+    height: 2px;
+    background-color: $secondFontColor;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
 // slider-nav active class
 
 
 .el-active .learning-slider-nav__link > .learning-slider-nav__circle {
-   background: #FFFFFF;
- }
+  background: #FFFFFF;
+}
 
 .el-active .learning-slider-nav__link > .learning-slider-nav__circle > .learning-slider-nav__icon {
   fill: #3A637E;
@@ -84,9 +99,28 @@
 
 // prices list active class
 
-.pr-active > .prices__dropdown{
+.pr-active > .prices__dropdown {
   display: block;
 }
+
+.pr-active > .prices-christmas__dropdown {
+  display: block;
+}
+
+.pr-active > .prices-christmas__icon-hide {
+  display: block;
+}
+
+.pr-active > .prices-broker__dropdown {
+  display: block;
+}
+
+.pr-active > .prices-broker__icon-hide {
+  display: block;
+}
+
+
+
 
 // find-broker catalog item active class
 

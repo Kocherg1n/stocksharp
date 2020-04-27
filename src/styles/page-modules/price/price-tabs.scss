@@ -1,8 +1,29 @@
 .price-tabs {
-  background: #FEFEFE;
+  position: relative;
+  border: 1px solid #CFCFCF;
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+
+  }
+
+  &__item {
+    font-weight: 600;
+    font-size: 15px;
+    padding: 10px 40px;
+    border: 1px solid $borderLight;
+    background-color: #F5F5F5;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 70%, 0% 70%);
+  }
 
   &__desc {
     width: 60%;
+    margin-top: 50px;
   }
 
   &__content {

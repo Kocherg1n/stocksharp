@@ -1,0 +1,82 @@
+.total {
+  max-width: 320px;
+  min-width: 300px;
+  padding-top: 30px;
+
+  @include phone {
+    display: flex;
+    flex-direction: column-reverse;
+    max-width: 100%;
+    margin-top: 30px;
+  }
+
+  &__result {
+    display: flex;
+    padding: 5px 20px;
+
+
+    &:nth-child(2) {
+      padding-bottom: 20px;
+      border-bottom: 1px solid $borderLight;
+    }
+
+    &:nth-child(3) {
+      padding-top: 20px;
+    }
+  }
+
+  &__price {
+    font-size: 22px;
+    margin-right: 10px;
+  }
+
+  &__discount {
+    font-size: 22px;
+    margin-right: 10px;
+  }
+
+  &__price-value {
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+  &__discount-value {
+    font-size: 22px;
+    font-weight: 600;
+    color: $isActiveColor;
+  }
+
+  &__sum {
+    font-size: 28px;
+    font-weight: 600;
+    margin-right: 10px;
+  }
+
+  &__sum-value {
+    font-size: 28px;
+    font-weight: 600;
+    color: $isActiveColor;
+    margin-bottom: 30px;
+  }
+
+  &__percent {
+    font-size: 33px;
+    color: $isActiveColor;
+    font-weight: 600;
+  }
+
+  &__description {
+    font-size: 17px;
+    border-bottom: 1px solid $borderLight;
+    padding: 25px 0 25px 0;
+  }
+
+  &__box {
+    box-shadow: 0 4px 23px rgba(0, 0, 0, 0.1);
+    padding: 0 25px 25px 25px;
+  }
+
+  &__desc-text {
+    padding-top: 25px;
+  }
+}

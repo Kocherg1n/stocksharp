@@ -1,0 +1,152 @@
+.learning-slider-nav {
+  background-color: rgba(45, 53, 58, 0.7);
+  padding: 40px 0;
+  position: relative;
+
+  &__dec1 {
+    position: absolute;
+    top: -20px;
+    left: 0;
+  }
+
+  &__dec2 {
+    position: absolute;
+    top: -25px;
+    left: 10%;
+  }
+
+  &__dec3 {
+    position: absolute;
+    top: -25px;
+    left: 26%;
+  }
+
+  &__dec4 {
+    position: absolute;
+    top: -7px;
+    left: 50%;
+  }
+
+  &__dec5 {
+    position: absolute;
+    top: -15px;
+    left: 59%;
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &__dec6 {
+    position: absolute;
+    top: -15px;
+    right: 0;
+  }
+
+  &__dec7 {
+    position: absolute;
+    top: -25px;
+    right: 10%;
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &__dec8 {
+    position: absolute;
+    top: -15px;
+    right: 22%;
+  }
+
+  &__dec9 {
+    position: absolute;
+    top: -11px;
+    right: 48%;
+  }
+
+  &__dec10 {
+    position: absolute;
+    top: -28px;
+    right: 69%;
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+
+  @include phone {
+    padding: 25px 0;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+    z-index: 50;
+
+    @include phone {
+      padding: 5px;
+    }
+  }
+
+  &__circle {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: #3A637E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+
+    @include phone {
+      width: 45px;
+      height: 45px;
+    }
+  }
+
+  &__icon {
+    width: 30px;
+    height: 30px;
+    fill: #FFFFFF;
+
+    @include phone {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &__name {
+    font-size: 15px;
+    color: $secondFontColor;
+    text-align: center;
+
+    @include phone {
+      font-size: 10px;
+    }
+
+    @include phone-m {
+      font-size: 9px;
+    }
+  }
+
+  &__title {
+    font-size: 36px;
+    color: $secondFontColor;
+    margin-right: 90px;
+
+    @include tablet {
+      display: none;
+    }
+  }
+}

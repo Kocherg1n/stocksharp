@@ -1,0 +1,114 @@
+.learning-slider-nav-broker {
+  background-color: rgba(45, 53, 58, 0.7);
+  padding: 40px 0;
+  position: relative;
+
+  
+  @include phone {
+    padding: 25px 0;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+
+    @include phone {
+      padding: 5px;
+    }
+  }
+
+  &__circle {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: #3A637E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+
+    @include phone {
+      width: 45px;
+      height: 45px;
+    }
+  }
+
+  &__icon {
+    width: 30px;
+    height: 30px;
+    fill: #FFFFFF;
+
+    @include phone {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &__name {
+    font-size: 15px;
+    color: $secondFontColor;
+    text-align: center;
+
+    @include phone {
+      font-size: 10px;
+    }
+
+    @include phone-m {
+      font-size: 9px;
+    }
+  }
+
+  &__title {
+    font-size: 36px;
+    color: $secondFontColor;
+    margin-right: 90px;
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &__ic1 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+
+  &__ic2 {
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+  }
+
+  &__ic3 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  &__ic4 {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  &__ic5 {
+    position: absolute;
+    bottom: 33px;
+    right: 27%;
+  }
+
+  &__ic6 {
+    position: absolute;
+    left: 29%;
+    top: 10%;
+  }
+}

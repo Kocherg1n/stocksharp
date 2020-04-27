@@ -1,0 +1,36 @@
+.hamburger-christmas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: rem(30);
+  height: rem(30);
+  cursor: pointer;
+  position: relative;
+
+
+  &__menu-icon {
+    height: 2px;
+    width: rem(30);
+    background-color: #FFFFFF;
+    position: relative;
+    cursor: pointer;
+
+    &:before {
+      content: "";
+      height: 2px;
+      width: rem(30);
+      position: absolute;
+      background-color: #FFFFFF;
+      bottom: 8px;
+    }
+
+    &:after {
+      content: "";
+      height: 2px;
+      width: rem(30);
+      position: absolute;
+      background-color: #FFFFFF;
+      top: 8px;
+    }
+  }
+}

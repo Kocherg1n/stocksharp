@@ -1,0 +1,158 @@
+.learning-header-broker {
+  padding: 25px 0 15px 0;
+  position: relative;
+  background-image: url("../../../img/broker.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #CECECE;
+    top: 60px;
+
+    @include laptop {
+      display: none;
+    }
+  }
+
+  &__title {
+    font-size: 24px;
+    color: $secondFontColor;
+  }
+
+  &__topheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    fill: #FFFFFF;
+
+    @include laptop {
+      flex: 1;
+    }
+  }
+
+  &__logo-top {
+    display: none;
+
+    @include laptop {
+      display: block;
+      flex: 1;
+    }
+  }
+
+  &__skype {
+    font-size: 15px;
+    color: $secondFontColor;
+
+    @include laptop {
+      display: none;
+    }
+  }
+
+  &__tel {
+
+    @include laptop {
+      display: none;
+    }
+  }
+
+  &__tel-link {
+    color: $secondFontColor;
+    font-size: 15px;
+  }
+
+  &__logo-icon {
+    fill: #FFFFFF;
+    width: 60px;
+    height: 36px;
+  }
+
+  &__nav {
+
+  }
+
+  &__lang-controls {
+    @include laptop {
+      margin-right: 30px;
+    }
+  }
+
+  &__lang-controls-up {
+    display: none;
+
+    @include laptop {
+      margin-right: 30px;
+      display: block;
+    }
+  }
+
+  &__subheader {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    position: relative;
+
+    @include laptop {
+      display: none;
+    }
+  }
+
+  &__hamburger {
+    display: none;
+
+    @include laptop {
+      display: block;
+      margin-left: 30px;
+    }
+  }
+
+  &__mail-link {
+    font-weight: 600;
+    color: $secondFontColor;
+    font-size: 18px;
+  }
+
+  &__ic1 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+
+  &__ic2 {
+    position: absolute;
+    left: 10%;
+    bottom: 0;
+  }
+
+  &__ic3 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  &__ic4 {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  &__ic5 {
+    position: absolute;
+    right: 30%;
+    top: 0;
+  }
+
+  &__ic6 {
+    position: absolute;
+    left: 30%;
+    top: 0;
+  }
+}
+

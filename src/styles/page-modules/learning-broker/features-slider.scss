@@ -1,0 +1,50 @@
+.features-slider {
+  position: relative;
+
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item {
+    min-width: 300px;
+
+    @include phone {
+      width: 290px;
+    }
+
+    @include phone-m {
+      width: 300px;
+    }
+  }
+
+  &__button-next {
+    position: absolute;
+    top: 50%;
+    right: -40px;
+    transform: translateY(-50%);
+
+    @include phone {
+      right: -35px;
+    }
+
+    @include phone-m {
+      display: none;
+    }
+  }
+
+  &__button-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -40px;
+
+    @include phone {
+      left: -35px;
+    }
+
+    @include phone-m {
+      display: none;
+    }
+  }
+}
