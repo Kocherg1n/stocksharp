@@ -78,6 +78,7 @@
   &__text {
     font-size: 16px;
     margin-top: 15px;
+    line-height: $mainLineHeight;
 
     @include phone {
       text-align: center;

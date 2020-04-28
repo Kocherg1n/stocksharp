@@ -39,6 +39,7 @@
   .soft__block3, .soft__block4 {
     font-size: 17px;
     position: relative;
+    line-height: $mainLineHeight;
 
     @include phone {
       margin-bottom: 70px;

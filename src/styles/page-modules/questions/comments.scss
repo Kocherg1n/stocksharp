@@ -19,9 +19,11 @@
 
   &__user-logo {
     margin-right: 60px;
+    width: 140px;
 
     @include laptop {
       margin-right: 30px;
+      width: 100px;
     }
 
     @include phone {
@@ -31,7 +33,10 @@
   }
 
   &__user-logo-icon {
-    height: 140px;
+    width: 140px;
+    height: auto;
+
+
 
     @include laptop {
       width: 100px;

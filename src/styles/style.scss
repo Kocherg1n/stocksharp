@@ -1,5 +1,7 @@
 // utils & mixins
 
+@import "utils/fonts";
+
 @import "mixins/mixins";
 
 @import "utils/variables";
@@ -7,8 +9,6 @@
 @import "mixins/media";
 
 @import "common/global";
-
-@import "utils/fonts";
 
 // modules
 
@@ -185,16 +185,27 @@
 // cristmass
 
 @import "page-modules/learning-christmas/features";
+
 @import "page-modules/learning-christmas/learning-header";
+
 @import "page-modules/learning-christmas/learning-nav";
+
 @import "page-modules/learning-christmas/language-setup";
+
 @import "page-modules/learning-christmas/learning-slider";
+
 @import "page-modules/learning-christmas/learning-slider-nav";
+
 @import "page-modules/learning-christmas/prices";
+
 @import "page-modules/learning-christmas/robots";
+
 @import "page-modules/learning-christmas/soft";
+
 @import "page-modules/learning-christmas/reviews";
+
 @import "page-modules/learning-christmas/partners";
+
 @import "page-modules/learning-christmas/hamburger";
 
 // broker
@@ -206,8 +217,6 @@
 @import "page-modules/learning-broker/features";
 
 @import "page-modules/learning-broker/prices";
-
-@import "page-modules/learning-broker/total";
 
 @import "page-modules/learning-broker/robots";
 

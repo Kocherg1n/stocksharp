@@ -6,7 +6,7 @@
 
   &:before {
     content: '';
-    background-image: url("../../../img/bgb.svg");
+    background-image: url("../img/bgb.svg");
     display: block;
     position: absolute;
     top: 0;
@@ -19,6 +19,7 @@
   &__title {
     font-size: 44px;
     margin-bottom: 20px;
+    font-weight: 600;
   }
 
   &__subtitle {
@@ -29,8 +30,8 @@
   &__text {
     font-size: 17px;
     position: relative;
-    //padding: 0 12%;
-
+    line-height: $mainLineHeight;
+    font-family: $secondFont;
 
     @include laptop {
       padding: 0;

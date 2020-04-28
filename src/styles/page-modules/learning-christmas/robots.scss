@@ -6,7 +6,7 @@
 
   &:before {
     content: '';
-    background-image: url("../../../img/bg1winter.svg");
+    background-image: url("../img/bg1winter.svg");
     display: block;
     position: absolute;
     top: 0;
@@ -19,18 +19,23 @@
   &__title {
     font-size: 44px;
     margin-bottom: 20px;
+    font-weight: 600;
+    position: relative;
+    z-index: 20;
   }
 
   &__subtitle {
     font-size: 19px;
     margin-bottom: 30px;
+    position: relative;
+    z-index: 20;
   }
 
   &__text {
     font-size: 17px;
     position: relative;
-    //padding: 0 12%;
-
+    line-height: $mainLineHeight;
+    font-family: $secondFont;
 
     @include laptop {
       padding: 0;

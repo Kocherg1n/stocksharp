@@ -1,5 +1,10 @@
 .features-slider {
   position: relative;
+  min-width: 360px;
+
+  @include tablet {
+    min-width: 290px;
+  }
 
   &__list {
     display: flex;

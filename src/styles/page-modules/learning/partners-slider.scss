@@ -48,7 +48,7 @@
     left: 250px;
     top: 50%;
     transform: translateY(-50%);
-
+    width: 13px;
 
     @include tablet {
       left: 150px;
@@ -58,12 +58,12 @@
     }
   }
 
-
   &__button-prev {
     position: absolute;
     right: 250px;
     top: 50%;
     transform: translateY(-50%);
+    width: 13px;
 
     @include tablet {
       right: 150px;

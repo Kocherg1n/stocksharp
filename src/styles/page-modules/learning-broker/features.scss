@@ -1,7 +1,7 @@
 .features-broker {
   padding: 80px 0 120px 0;
   overflow: hidden;
-  background-image: url("../../../img/bgb.svg");
+  background-image: url("../img/bgb.svg");
 
   @include phone {
     padding: 30px 0 30px 0;
@@ -79,6 +79,7 @@
   &__text {
     font-size: 16px;
     margin-top: 15px;
+    line-height: $mainLineHeight;
 
     @include phone {
       text-align: center;

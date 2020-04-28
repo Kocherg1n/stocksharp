@@ -1,7 +1,7 @@
 .learning-header-broker {
   padding: 25px 0 15px 0;
   position: relative;
-  background-image: url("../../../img/broker.png");
+  background-image: url("../img/broker.png");
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -20,8 +20,12 @@
   }
 
   &__title {
-    font-size: 24px;
-    color: $secondFontColor;
+    position: relative;
+    z-index: 20;
+
+    @include phone {
+      display: none;
+    }
   }
 
   &__topheader {
@@ -32,6 +36,8 @@
 
   &__logo {
     fill: #FFFFFF;
+    position: relative;
+    z-index: 20;
 
     @include laptop {
       flex: 1;
@@ -40,9 +46,14 @@
 
   &__logo-top {
     display: none;
+    position: relative;
+    z-index: 20;
 
     @include laptop {
       display: block;
+    }
+
+    @include phone {
       flex: 1;
     }
   }
@@ -79,6 +90,9 @@
   }
 
   &__lang-controls {
+    position: relative;
+    z-index: 20;
+
     @include laptop {
       margin-right: 30px;
     }
@@ -86,6 +100,8 @@
 
   &__lang-controls-up {
     display: none;
+    position: relative;
+    z-index: 20;
 
     @include laptop {
       margin-right: 30px;
@@ -129,12 +145,21 @@
     position: absolute;
     left: 10%;
     bottom: 0;
+
+
+    @include phone {
+      display: none;
+    }
   }
 
   &__ic3 {
     position: absolute;
     right: 0;
     bottom: 0;
+
+    @include phone {
+      display: none;
+    }
   }
 
   &__ic4 {
@@ -147,6 +172,10 @@
     position: absolute;
     right: 30%;
     top: 0;
+
+    @include phone {
+      display: none;
+    }
   }
 
   &__ic6 {

@@ -73,11 +73,11 @@
       content: '';
       position: absolute;
       display: inline-block;
-      width: 10px;
-      height: 17px;
-      margin: -2px 1px 2px;
+      width: 8px;
+      height: 16px;
+      margin: -2px 0px 1px;
       border: solid $isActiveColor;
-      border-width: 0 4px 4px 0;
+      border-width: 0 3px 3px 0;
       -webkit-transform: rotate(45deg);
       transform: rotate(45deg);
       opacity: 0;
@@ -113,6 +113,7 @@
     margin-top: 20px;
     text-transform: uppercase;
     text-align: center;
+    line-height: $mainLineHeight;
   }
 
   &__dropdown {
@@ -122,16 +123,24 @@
     box-shadow: 0 4px 23px rgba(0, 0, 0, 0.1);
     background-color: #FFFFFF;
     z-index: 20;
-    bottom: -317%;
+    bottom: -296%;
     left: 0;
     display: none;
 
     @include laptop {
-      bottom: -345%;
+      bottom: -327%;
     }
 
     @include tablet {
-      bottom: -330%;
+      bottom: -298%;
+    }
+
+    @include phone {
+      bottom: -350%;
+    }
+
+    @include phone-m {
+      bottom: -323%;
     }
   }
 

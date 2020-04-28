@@ -30,6 +30,8 @@ html {
 
 body {
   margin: 0;
+  font-family: $mainFont;
+  font-size: $mainFontSize;
 }
 
 img {
@@ -85,6 +87,7 @@ a {
 
 .wrapper {
   position: relative;
+  overflow: hidden;
 }
 
 .title {

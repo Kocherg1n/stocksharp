@@ -16,7 +16,12 @@
     display: flex;
     align-items: center;
     margin-bottom: 25px;
+    position: relative;
+    z-index: 20;
 
+    &:first-child {
+      margin-bottom: 40px;
+    }
 
     &:last-child {
       margin-bottom: 0;
@@ -33,7 +38,26 @@
     justify-content: center;
     align-items: center;
     margin-right: 30px;
+    position: relative;
+
+    &:before {
+      content: '';
+      background-color: #202020;
+      opacity: .2;
+      display: block;
+      position: absolute;
+      height: 50px;
+      width: 1px;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -50px;
+    }
   }
+
+  &__icon-end:before {
+    display: none;
+  }
+
 
   &__text {
     font-size: 16px;

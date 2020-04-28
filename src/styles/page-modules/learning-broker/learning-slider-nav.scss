@@ -3,7 +3,7 @@
   padding: 40px 0;
   position: relative;
 
-  
+
   @include phone {
     padding: 25px 0;
   }
@@ -56,6 +56,8 @@
     font-size: 15px;
     color: $secondFontColor;
     text-align: center;
+    position: relative;
+    z-index: 20;
 
     @include phone {
       font-size: 10px;
@@ -86,12 +88,20 @@
     position: absolute;
     bottom: 0;
     left: 10%;
+
+    @include phone {
+      display: none;
+    }
   }
 
   &__ic3 {
     position: absolute;
     bottom: 0;
     right: 0;
+
+    @include phone {
+      display: none;
+    }
   }
 
   &__ic4 {
@@ -102,7 +112,7 @@
 
   &__ic5 {
     position: absolute;
-    bottom: 33px;
+    top: 0;
     right: 27%;
   }
 
